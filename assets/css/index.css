@@ -1,0 +1,201 @@
+
+/* GENERAL */
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    background-color: blueviolet;
+    overflow-x: unset;
+}
+
+h1 {
+    font-size: 20em;
+}
+
+main, header, section, aside, footer {
+    margin: 0;    
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.entertaniment {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.emoji {
+    color: #000000!important;
+}
+
+.love-you {
+    background: #000000!important;
+}
+
+h3::after {
+    content: "";
+    background: #00000014;
+    height: 1px;
+    display: block;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* HOME */
+
+.home {
+    background: #fafafa;
+}
+
+.coffe-cup {
+    width: 65px;
+}
+
+.home .image-me {
+    border: 5px solid #c07eff;
+    border-radius: 50%;
+}
+
+.home .image-me img {
+	width: 350px;
+    min-width: 250px;
+    border: 5px solid #8445bf;
+    border-radius: 50%;
+}
+
+/* WHAT I DO */
+
+.what-i-do {
+    background: #eaeaea;
+}
+
+.what-i-do .image-stacks {
+    width: 250px;
+}
+
+.what-i-do .image-stacks img {
+    min-width: 250px;
+    width: inherit;
+}
+
+.what-i-do .section-message span {
+    font-weight: lighter;
+    font-size: 2.3rem;
+}
+
+/* WHERE I WAS BORN */
+
+.where-i-was-born {
+    background: #fafafa;
+}
+
+.where-i-was-born .image-gbi {
+    /* height: 100vh;
+    width: 50vh; */
+}
+
+.where-i-was-born .image-gbi img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+ .section-message {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #000000ab;
+}
+
+.section-message span {
+    display: block;
+}
+
+.section-message span .name {
+    color: blueviolet;
+}
+
+.section-message span .name:hover {
+    color: blueviolet;
+}
+
+.section-message span .link {
+    cursor: pointer;
+    color: #292929ab;
+}
+
+.section-message span .github:hover {
+    color: #586069;
+}
+
+.section-message span .linkedin:hover {
+    color: #0a66c2;
+}
+
+.home3 {
+    background: rgb(157, 224, 55)!important;
+}
+
+.home4 {
+    background: rgb(57, 214, 241)!important;
+}
+
+.home6 {
+    background: rgb(235, 46, 203)!important;
+}
+
+@media screen and (max-width: 600px) { 
+    .section-container {
+        display: block;
+    }
+
+    .section-message {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .home .image-me {
+        border: none;
+        text-align: center;
+    }
+
+    .home .image-me img {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 600px) { 
+    @media screen and (max-width: 800px) { 
+        .section-container {
+            display: block;
+        }
+
+        .section-message {
+            padding: 20px;
+        }
+
+        .home .image-me {
+            border: none;
+            text-align: center;
+        }
+
+        .home .image-me img {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) { 
+    @media screen and (max-width: 1300px) { 
+        .section-message {
+            padding: 20px;
+        }
+    }
+}
