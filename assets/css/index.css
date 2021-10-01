@@ -64,3 +64,32 @@ html, body {
     font-size: 1.2em;
     margin: 20px 0 45px 0;
 }
+
+@media (max-width:1025px) {
+    .main h1 {
+        font-size: 4em;
+    }
+
+    .main ul {
+        font-size: .8em;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .emp::before {
+        content: "";
+        margin-right: 0;
+    }
+    
+    .emp::after {
+        content: "";
+        margin-right: 0;
+    }
+
+    .main ul li{
+        display: inherit;
+    }
+    
+}
