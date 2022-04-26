@@ -53,7 +53,6 @@ main .feliz_aniversario {
     height: 230px;
     background-color: white;
     padding: 20px 20px 50px 20px;
-    position: absolute;
 }
 
 .cartao_foto img, .cartao_foto video {
@@ -107,18 +106,29 @@ main .feliz_aniversario {
 }
 
 button {
-    padding: 30px;
+    padding: 10px;
     cursor: pointer;
-    background-color: white;
-    border: none;
+    background-color: rgb(255 255 255);
+    /* border: none; */
     border-radius: 6px;
-    font-size: 0.5em;
-    z-index: 999999999;
+    border: 1px solid #858585;
+    font-size: 1.1em;
+    transition: .2s;
+    font-weight: 600;
 }
 
 button:hover {
-    background-color: black;
+    background-color: rgb(247 247 247);
 }
+
+input {
+    padding: 10px;
+    border: 1px solid #858585;
+    border-radius: 6px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
 
 
 
@@ -178,12 +188,27 @@ button:hover {
     margin: 20px 0 45px 0;
 }
 
+.primeiras_fotos {
+    display: flex;
+    justify-content: space-around;
+}
+
+#content {
+    display: none;
+}
+
+#secret {
+    display: block;
+    font-family: system-ui;
+    display: flow-root;
+}
+
 @media (max-width:1750px) {
-    .blank {
-        display: block;
+    /* .blank {
+        display: none;
     }
     
     main {
-        display: none;
-    }
+        display: block;
+    } */
 }

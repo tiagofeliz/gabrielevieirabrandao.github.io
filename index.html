@@ -13,21 +13,24 @@
     </head>
 
     <body>
-        <!--<section class="blank">
+        <section class="blank">
             <p>Resolução não compatível :(</p>
             <p>Bobinha.. você precisa acessar esse site no computador.. boba :)</p>
         </section>
         <main>
+            <div id="content">
             <section class="section">
                 <canvas id="my-canvas"></canvas>
-                <div class="cartao_foto bobinha_casa">
-                    <img src="img/bobinha_olho.jpeg"/>
-                </div>
-                <div class="cartao_foto bobinha_olho">
-                    <img src="img/bobinha_smile.jpeg"/>
-                </div>
                 <div class="feliz_aniversario">
                     <p>Feliz Aniversário!</p>
+                    <div class="primeiras_fotos">
+                <div class="cartao_foto ">
+                    <img src="img/bobinha_olho.jpeg"/>
+                </div>
+                <div class="cartao_foto">
+                    <img src="img/bobinha_smile.jpeg"/>
+                </div>
+            </div>
                 </div>
                 <div class="cartinha">
                     <p>Minha Bobinha, </p>
@@ -174,14 +177,46 @@
                     <p>Assinado: Eu.</p>
                 </div>
             </section>
-            <div class="separator"></div> 
+            <div class="separator"></div>
+            </div> 
+            <div id="secret">
+                <h1>Atenção!</h1>
+                <p>Para visualizar o conteúdo, insira a senha usando a combinação dos dados a seguir:</p>
+                <ul>
+                    <li>Data de nascimento do desenvolvedor no formato dd/mm/yyyy (exemplo: 01/12/2022)</li>
+                    <li>Sobrenome do desenvolvedor</li>
+                    <li>Seu apelido</li>
+                </ul>
+                <p>Exemplo.. para os dados abaixo a chave seria: 06/09/1953asdrubalchiquinha</p>
+                <ul>
+                    <li>Data de nascimento: 06/09/1953</li>
+                    <li>Nome do desenvolvedor: Sebastião Asdrubal dos Carmos e Silva</li>
+                    <li>Seu apelido: Chiquinha</li>
+                </ul>
+                <input type="text" id="input"/>
+                <button id="send">Enviar</button>
+            </div>
         </main>
-      </body>-->
-      <h1>Waiting...</h1>
+    </body>
 </html>
 <script src="confetti.js"></script>
 <script>
     var confettiSettings = { target: 'my-canvas' };
     var confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
+
+    document.getElementById("send").addEventListener("click", function() {
+        let element = document.getElementById("input").value
+
+        if(element == "30/05/1996felizbobinha") {
+            alert("Oooooiii mozinho.. FELIZ ANIVERSÁRIO (finge que hoje é dia 09/02.. e segue a cartinha a risca ta?)")
+            document.getElementById("input").value = ""
+
+            document.getElementById("secret").style.display = "none"
+
+            document.getElementById("content").style.display = "block"
+        } else {
+            alert("Senha incorreta!!! (Se você não for o meu mozinho.. vá embora.. xô!)")
+        }
+    });
 </script>
