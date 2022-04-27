@@ -203,7 +203,32 @@ input {
     display: flow-root;
 }
 
-@media (max-width:1750px) {
+@media (max-width:700px) {
+    .feliz_aniversario {
+        font-size: 4em!important;
+        text-align: center;
+    }
+
+    .primeiras_fotos {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .primeiras_fotos .cartao_foto {
+        margin-top: 20px;
+    }
+
+    .cartinha {
+        font-size: 2em;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo {
+        font-size: 3em;
+    }
     /* .blank {
         display: none;
     }
